@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stone_paper_scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <div class="score_board">
+        <div class="left">
+                <p class="text">ROCK</p>
+                <p class="text">PAPER</p>
+                <p class="text">SCISSORS</p>
+        </div>
+        <div class="right">
+            <div class="score">
+                <div class="computer">
+                <p class="text1">COMPUTER</p>
+                <p class="text1">SCORE</p>
+                </div>
+                <p class="text2" id="computerScore">0</p>
+            </div>
+            <div class="score">
+                <div class="your">
+                <p class="text1">YOUR</p>
+                <p class="text1">SCORE</p>
+                </div>
+                <p class="text2" id="yourScore">0</p>
+            </div>
+        </div>
+    </div>
+    <div class="game">
+
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+
+    <div class="stone" id="stone">
+        <div class="outer_circle"  id="selection-icon">
+            <div class="inner_circle">
+                <img src="rock.png" alt="stone_icon" class="stone_icon">
+            </div>
+         </div>
+    </div>
+
+    <div class="paper" id="paper">
+        <div class="outer_circle1"  id="selection-icon">
+            <div class="inner_circle1">
+                <img src="paper.png" alt="paper_icon" class="paper_icon">
+            </div>
+        </div>
+    </div>
+
+    <div class="scissor" id="scissor">
+        <div class="outer_circle2"  id="selection-icon">
+            <div class="inner_circle2">
+                <img src="scissors.png" alt="scissor_icon" class="scissor_icon">
+            </div>
+        </div>
+    </div>
+    </div>
+  
+<div class="bottom-buttons">
+   <button class="rules">RULES</button>
+   <button class="rules" id = "nxt">NEXT</button>
+</div>
+
+  
+    <div class="hidden">
+    <h2 class="heading">Game Rules</h2>
+    <ul class="list">
+        <li class="instructions">Rock beats scissors, scissors beat paper, and paper beats rock.</li><br>
+        <li class="instructions">Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li><br>
+        <li class="instructions">Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li><br>
+        <li class="instructions">If both players lay down the same hand, each player lays down another hand</li><br>
+    </ul>
+    </div>
+    <div class="cross">
+        <div class="cross_outer_circle">
+            <div class="cross_inner_circle">
+                <img src="X.png" alt="x" class="x">
+            </div>
+        </div>
+    </div>
+  
+
+    <div class = "results_board">
+        <div class = "hidden_results">
+    <div id="player-selection">
+        <h3>YOU PICKED</h3>
+        <div class="outer_circle_results choice" id="player-element">
+            <div class="inner_circle_results">
+                <img id="player-choice" src="">
+            </div>
+        </div>
+    </div>
+    <div class="reslts-text-board">
+        <p class="text3" id="result"></p>
+    </div>
+    <div id="computer-selection">
+        <h3>PC PICKED</h3>
+        <div class="outer_circle_results1 choice" id="computer-element">
+            <div class="inner_circle_results1">
+                <img id="computer-choice" src="">
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+     <script src="script.js"></script>
+</body>
+</html>
